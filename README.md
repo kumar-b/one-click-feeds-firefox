@@ -33,11 +33,12 @@ This options enables to configure a max number of tabs to open at a time. For Ex
 * nodejs
 * jpm `npm install -g jpm`
 
-# Development
+## Development
   * `git clone https://github.com/kumar-b/one-click-feeds-firefox.git`
   * Run `jpm xpi`
   * Open `one-click-feeds.xpi` in Firefox
-  * You may need to sign it using jpm to run in release version of firefox.
+  * You can use nightly or developer version of firefox to test unsigned xpi.
+  * You need to sign it using jpm to run in release version of firefox. Check more details at the following blog : https://blog.mozilla.org/addons/2015/12/18/signing-firefox-add-ons-with-jpm-sign/
 
 # Contribution
 
