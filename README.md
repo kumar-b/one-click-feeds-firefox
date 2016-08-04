@@ -14,7 +14,7 @@ It takes a comma separated urls as input. Any feed url that starts with any of t
 
 For Example in the above image, there are two urls given.
   * http://www.thehindu.com/business/
-  : This options will mark all the bussiness news from the hindu as read and no tabs will be opened.
+  : This options will mark all the business news from thehindu as read and no tabs will be opened.
   * http://www.fairobserver.com/region/latin_america/
   : This option will automatically mark all latin_america region news from fairobserver.
 
@@ -23,14 +23,15 @@ This options enables to configure a max number of tabs to open at a time. For Ex
 
 
 # Installation
-## Prerequisite
-* nodejs
-* jpm `npm install -g jpm`
 
 ## Install signed extension
 * Download latest xpi file. Open the xpi file using Firefox.
 
-## Developement
+## Prerequisite for development
+* nodejs
+* jpm `npm install -g jpm`
+
+## Development
   * `git clone https://github.com/kumar-b/one-click-feeds-firefox.git`
   * Run `jpm xpi`
   * Open `one-click-feeds.xpi` in Firefox
