@@ -1,0 +1,34 @@
+{
+  "title": "One Click Feeds",
+  "name": "one-click-feeds",
+  "version": "1.0.1",
+  "description": "Firefox extension to open feedly feeds as tabs in one click.",
+  "main": "lib/main.js",
+  "author": "kumar biswaranjan",
+  "homepage": "https://github.com/kumar-b/one-click-feeds-firefox",
+  "icon": {
+    "32": "resource://@one-click-feeds/data/images/One-click-feeds-32X32.png",
+    "48": "resource://@one-click-feeds/data/images/One-click-feeds-64X64.png",
+    "64": "resource://@one-click-feeds/data/images/One-click-feeds-64X64.png"
+  },
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ],
+  "preferences": [{
+    "type": "string",
+    "name": "blacklists",
+    "value": "",
+    "title": "Comma separated blacklisted urls. Any url starts with these, the tabs will not be opened and will be marked as read in feedly."
+  },
+  {
+    "type": "integer",
+    "name": "maxlinks",
+    "value": 0,
+    "title": "Max number of links to be opened at one click."
+  }]
+}
