@@ -27,11 +27,13 @@ This options enables to configure a max number of tabs to open at a time. For Ex
 ## Install signed extension
 * Download latest xpi file. Open the xpi file using Firefox.
 
+# Development
+
 ## Prerequisite for development
 * nodejs
 * jpm `npm install -g jpm`
 
-## Development
+# Development
   * `git clone https://github.com/kumar-b/one-click-feeds-firefox.git`
   * Run `jpm xpi`
   * Open `one-click-feeds.xpi` in Firefox
