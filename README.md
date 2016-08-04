@@ -7,7 +7,7 @@ Firefox extension to open feedly feeds as tabs in one click.
 # Usage
 Navigate to extension page in firefox `about:addons`. Go to `Extensions --> One Click Feeds --> Options`
 
-![One click feeds options](data/images/Options.png)
+![One click feeds options](extra/Options.png)
 
 ## Blacklisted URLs
 It takes a comma separated urls as input. Any feed url that starts with any of these blacklisted urls will not open any tab and it will be automatically marked as read in feedly account so that it won't appear in future feedly page.
