@@ -21,16 +21,22 @@ self.port.on("blaclist_pref_change", function(blacklist_urls_pref) {
 function eachFeedlyUrl(maxlinks, callback) {
   var link_attribute = "data-alternate-link";
   var links = document.querySelectorAll("div[" + link_attribute + "]");
-  var numLinksToOpen = maxlinks > 0 ? maxlinks : links.length;
-  for (var i = 0; i < numLinksToOpen; i++) {
-    var link = links[i];
-    var entryid = link.getAttribute("data-entryid");
-    var url = link.getAttribute(link_attribute);
-    //if (!url.match(/(^http:\/\/www\.thehindu\.com\/news\/national\/(andhra-pradesh|kerala|tamil-nadu|karnataka|telangana)\/.*)/g)) {
+  var numLinksToOpen = maxlinks > 0 ? maxlinks : 10;
+  var linksOpened = 0;
+  for (var i = 0; i < links.length; i++) {
+    if (linksOpened < numLinksToOpen) {
+      var link = links[i];
+      var entryid = link.getAttribute("data-entryid");
+      var url = link.getAttribute(link_attribute);
+      if (!isBlackListed(url)) {
+        linksOpened++;
+      }
+      //if (!url.match(/(^http:\/\/www\.thehindu\.com\/news\/national\/(andhra-pradesh|kerala|tamil-nadu|karnataka|telangana)\/.*)/g)) {
       callback(entryid, url);
-    //} else {
+      //} else {
       //continue;
-    //}
+      //}
+    }
   }
 }
 
